@@ -153,7 +153,7 @@ func getDefaultDepends(target string) []string {
 			"gtk3", /* for electron 2+ (electron 1 uses gtk2, but this old version is not supported anymore) */
 			"libnotify", "nss", "libXScrnSaver", "libXtst", "xdg-utils",
 			"at-spi2-core", /* since 5.0.0 */
-			"libuuid",      /* since 4.0.0 */
+			"/usr/lib64/libuuid.so.1", /* since 4.0.0 */
 		}
 
 	case "pacman":
